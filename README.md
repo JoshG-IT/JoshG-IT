@@ -124,7 +124,9 @@
 
 <!-- ============================ CREDITS ============================= -->
 <p align="center" style="margin-top:14px;"><sub>
-  Shout-out: <a href="https://shields.io/">Shields.io</a>,
+  Shout-out: 
+  <a href="https://www.skool.com/cyber-range/about?ref=cc0a53036e6246ed9c46a6262847c18b">Cyber-Range</a>,
+  <a href="https://shields.io/">Shields.io</a>,
   <a href="https://github.com/DenverCoder1/readme-typing-svg">readme-typing-svg</a>,
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a>,
   <a href="https://github.com/anuraghazra/github-readme-stats">readme-stats</a>,
