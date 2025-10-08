@@ -1,0 +1,75 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#deep)"/>
+
+  <!-- Rotating rings -->
+  <g transform="translate(600,170)" stroke="#1f2937" fill="none">
+    <circle r="110" stroke-width="2" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="160" stroke-width="2" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="36s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="210" stroke-width="2" opacity="0.45">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="42s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Wave tunnel (three layers) -->
+  <g stroke="url(#wave)" fill="none" stroke-width="2">
+    <path d="M 0 170 C 200 120 400 220 600 170 S 1000 120 1200 170">
+      <animate attributeName="d"
+               dur="6s" repeatCount="indefinite"
+               values="M 0 170 C 200 120 400 220 600 170 S 1000 120 1200 170;
+                       M 0 170 C 200 220 400 120 600 170 S 1000 220 1200 170;
+                       M 0 170 C 200 120 400 220 600 170 S 1000 120 1200 170"/>
+    </path>
+    <path d="M 0 170 C 240 100 480 240 720 170 S 1080 100 1200 170" opacity="0.5">
+      <animate attributeName="d"
+               dur="7.5s" repeatCount="indefinite"
+               values="M 0 170 C 240 100 480 240 720 170 S 1080 100 1200 170;
+                       M 0 170 C 240 240 480 100 720 170 S 1080 240 1200 170;
+                       M 0 170 C 240 100 480 240 720 170 S 1080 100 1200 170"/>
+    </path>
+    <path d="M 0 170 C 160 140 320 200 480 170 S 800 140 1200 170" opacity="0.3">
+      <animate attributeName="d"
+               dur="5.5s" repeatCount="indefinite"
+               values="M 0 170 C 160 140 320 200 480 170 S 800 140 1200 170;
+                       M 0 170 C 160 200 320 140 480 170 S 800 200 1200 170;
+                       M 0 170 C 160 140 320 200 480 170 S 800 140 1200 170"/>
+    </path>
+  </g>
+
+  <!-- Drifting particles along wave -->
+  <g filter="url(#blur2)">
+    <circle cx="0" cy="170" r="4" fill="#22d3ee">
+      <animate attributeName="cx" from="0" to="1200" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="170;160;170;180;170" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="170" r="4" fill="#4ade80">
+      <animate attributeName="cx" from="200" to="1200" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="170;180;170;160;170" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="170" r="4" fill="#a78bfa">
+      <animate attributeName="cx" from="400" to="1200" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="170;165;170;175;170" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Caption -->
+  <text x="600" y="318" font-family="Inter, Segoe UI" font-size="14" fill="#94a3b8" text-anchor="middle">
+    Data streams • Telemetry • Throughput
+  </text>
+</svg>
