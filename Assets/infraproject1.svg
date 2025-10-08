@@ -1,32 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
-  <!-- Background -->
-  <rect width="720" height="200" fill="#0f172a"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%">
+        <animate attributeName="stop-color" values="#0B1220;#0B1220;#0B1220" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%">
+        <animate attributeName="stop-color" values="#0F172A;#0F172A;#0F172A" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0078D4"/>
+      <stop offset="100%" stop-color="#34B7F1"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
 
-  <!-- Blueprint pulse line -->
-  <linearGradient id="infraLine" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#0ea5e9">
-      <animate attributeName="stop-color" values="#0ea5e9;#38bdf8;#0ea5e9" dur="5s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="100%" stop-color="#38bdf8">
-      <animate attributeName="stop-color" values="#38bdf8;#0ea5e9;#38bdf8" dur="5s" repeatCount="indefinite"/>
-    </stop>
-  </linearGradient>
+  <rect width="960" height="260" fill="url(#bg)"/>
 
-  <!-- Animated pulse line -->
-  <rect x="60" y="160" width="600" height="3" fill="url(#infraLine)">
-    <animate attributeName="width" values="100;600;100" dur="5s" repeatCount="indefinite"/>
+  <!-- soft radial glows -->
+  <g filter="url(#soft)" opacity="0.35">
+    <circle cx="780" cy="70" r="80" fill="#0078D4"/>
+    <circle cx="220" cy="190" r="70" fill="#34B7F1"/>
+  </g>
+
+  <!-- animated beam -->
+  <rect x="120" y="190" width="720" height="4" rx="2" fill="url(#beam)">
+    <animate attributeName="width" values="240;720;240" dur="6s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Title -->
-  <text x="60" y="100" font-family="JetBrains Mono, monospace" font-size="40" fill="#e2e8f0">
-    Infrastructure Project 1
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  <!-- title -->
+  <text x="120" y="120" font-family="Segoe UI, system-ui, -apple-system, sans-serif"
+        font-size="40" font-weight="600" fill="#E6EEF8">
+    Azure Infrastructure Project 1
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="5s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Faint grid effect -->
-  <g stroke="#1e293b" stroke-width="0.5" opacity="0.2">
-    <line x1="0" y1="60" x2="720" y2="60"/>
-    <line x1="0" y1="100" x2="720" y2="100"/>
-    <line x1="0" y1="140" x2="720" y2="140"/>
-  </g>
+  <!-- subtitle-like tag (muted, no subtitle text) -->
+  <rect x="120" y="136" width="260" height="10" rx="5" fill="#1F2937" opacity="0.35"/>
 </svg>
