@@ -1,71 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260">
-  <defs>
-    <linearGradient id="cpu" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#34D399"/>
-      <stop offset="100%" stop-color="#065F46"/>
-    </linearGradient>
-    <linearGradient id="net" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0C4A6E"/>
-    </linearGradient>
-    <linearGradient id="sto" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#4C1D95"/>
-    </linearGradient>
-    <filter id="soft">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/>
-    </filter>
-  </defs>
-
   <rect width="960" height="260" fill="#0F172A"/>
 
-  <!-- title -->
+  <!-- Title -->
   <text x="40" y="44" font-family="Segoe UI, system-ui" font-size="20" fill="#E6EEF8" font-weight="600">
-    Resource Usage (Live)
+    Cost Composition (Live)
   </text>
 
-  <!-- Bars -->
-  <g font-family="Segoe UI, system-ui" font-size="13" fill="#E6EEF8">
-    <!-- CPU -->
-    <text x="80" y="80">CPU %</text>
-    <rect x="80" y="94" width="220" height="18" rx="9" fill="#122A1F" opacity="0.6"/>
-    <rect x="80" y="94" width="120" height="18" rx="9" fill="url(#cpu)" filter="url(#soft)">
-      <animate attributeName="width" values="90;190;120;200;130" dur="6s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Network -->
-    <text x="80" y="140">Network Throughput</text>
-    <rect x="80" y="154" width="220" height="18" rx="9" fill="#102734" opacity="0.6"/>
-    <rect x="80" y="154" width="100" height="18" rx="9" fill="url(#net)" filter="url(#soft)">
-      <animate attributeName="width" values="80;160;140;110;180" dur="7s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Storage -->
-    <text x="80" y="200">Storage Utilization</text>
-    <rect x="80" y="214" width="220" height="18" rx="9" fill="#1F1640" opacity="0.6"/>
-    <rect x="80" y="214" width="70" height="18" rx="9" fill="url(#sto)" filter="url(#soft)">
-      <animate attributeName="width" values="60;120;90;140;100" dur="7.5s" repeatCount="indefinite"/>
-    </rect>
+  <!-- ===== Donut 1: Application Services ===== -->
+  <g transform="translate(200,120)" font-family="Segoe UI, system-ui" text-anchor="middle">
+    <!-- base ring -->
+    <circle r="60" fill="none" stroke="#1F2937" stroke-width="14"/>
+    <!-- animated share -->
+    <circle r="60" fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" transform="rotate(-90)">
+      <!-- circumference ≈ 377; animate the “filled” portion first value in dasharray -->
+      <animate attributeName="stroke-dasharray"
+               values="90 400;180 400;140 400;220 400;160 400;90 400"
+               dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <!-- labels UNDER the ring -->
+    <text x="0" y="88" fill="#E6EEF8" font-size="14" font-weight="600">Application Services</text>
+    <text x="0" y="108" fill="#93A3B8" font-size="12">App Service • AKS • Functions</text>
   </g>
 
-  <!-- Sparkline panel -->
-  <g transform="translate(360,70)">
-    <text x="0" y="-12" font-family="Segoe UI, system-ui" font-size="13" fill="#93A3B8">Last minute trends</text>
-    <rect x="0" y="0" width="560" height="160" rx="12" fill="#0B1220" stroke="#1F2937"/>
-    <!-- path animates between two curves -->
-    <path id="line" d="M10,120 C90,80 170,140 250,100 S410,130 490,90 S570,110 550,115"
-          fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round">
-      <animate attributeName="d" dur="6s" repeatCount="indefinite"
-        values="
-        M10,120 C90,80 170,140 250,100 S410,130 490,90 S570,110 550,115;
-        M10,120 C90,100 170,90 250,120 S410,90 490,130 S570,80 550,95;
-        M10,120 C90,80 170,140 250,100 S410,130 490,90 S570,110 550,115"/>
-    </path>
-    <!-- moving dot -->
-    <circle r="5" fill="#34B7F1">
-      <animateMotion dur="6s" repeatCount="indefinite">
-        <mpath xlink:href="#line"/>
-      </animateMotion>
+  <!-- ===== Donut 2: Data Services ===== -->
+  <g transform="translate(480,120)" font-family="Segoe UI, system-ui" text-anchor="middle">
+    <circle r="60" fill="none" stroke="#1F2937" stroke-width="14"/>
+    <circle r="60" fill="none" stroke="#A78BFA" stroke-width="14" stroke-linecap="round" transform="rotate(-90)">
+      <animate attributeName="stroke-dasharray"
+               values="110 400;220 400;180 400;260 400;200 400;110 400"
+               dur="8.5s" repeatCount="indefinite"/>
     </circle>
+    <text x="0" y="88" fill="#E6EEF8" font-size="14" font-weight="600">Data Services</text>
+    <text x="0" y="108" fill="#93A3B8" font-size="12">SQL Database • Storage • Cosmos DB</text>
+  </g>
+
+  <!-- ===== Donut 3: Network Egress ===== -->
+  <g transform="translate(760,120)" font-family="Segoe UI, system-ui" text-anchor="middle">
+    <circle r="60" fill="none" stroke="#1F2937" stroke-width="14"/>
+    <circle r="60" fill="none" stroke="#34D399" stroke-width="14" stroke-linecap="round" transform="rotate(-90)">
+      <animate attributeName="stroke-dasharray"
+               values="50 400;140 400;90 400;180 400;70 400;50 400"
+               dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="88" fill="#E6EEF8" font-size="14" font-weight="600">Network Egress</text>
+    <text x="0" y="108" fill="#93A3B8" font-size="12">Outbound Data Transfer</text>
   </g>
 </svg>
