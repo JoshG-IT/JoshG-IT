@@ -1,0 +1,75 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <g font-family="JetBrains Mono, Menlo, monospace" fill="#e5e7eb" font-size="14">
+
+    <!-- Zones -->
+    <g opacity="0.15">
+      <rect x="30" y="30" width="340" height="220" fill="#38bdf8"/>
+      <rect x="430" y="30" width="340" height="220" fill="#22c55e"/>
+      <rect x="830" y="30" width="340" height="220" fill="#a78bfa"/>
+    </g>
+    <text x="40" y="52">EDGE (WAF/CDN)</text>
+    <text x="440" y="52">APP (LB/Compute)</text>
+    <text x="840" y="52">DATA (KV/DB)</text>
+
+    <!-- Nodes -->
+    <g>
+      <rect x="70" y="110" width="80" height="40" rx="8" fill="#1f2937" stroke="#67e8f9"/>
+      <text x="80" y="135">WAF</text>
+
+      <rect x="510" y="110" width="80" height="40" rx="8" fill="#1f2937" stroke="#4ade80"/>
+      <text x="520" y="135">LB</text>
+
+      <rect x="570" y="170" width="120" height="40" rx="8" fill="#1f2937" stroke="#4ade80"/>
+      <text x="580" y="195">APP NODES</text>
+
+      <rect x="930" y="110" width="120" height="40" rx="8" fill="#1f2937" stroke="#c4b5fd"/>
+      <text x="940" y="135">KEY VAULT</text>
+
+      <rect x="930" y="170" width="120" height="40" rx="8" fill="#1f2937" stroke="#c4b5fd"/>
+      <text x="970" y="195">DB</text>
+    </g>
+
+    <!-- Pipes -->
+    <g stroke="#94a3b8" stroke-width="3" fill="none">
+      <path id="p1" d="M150,130 C 260,130 420,130 510,130"/>
+      <path id="p2" d="M550,130 C 640,130 820,130 930,130"/>
+      <path id="p3" d="M630,190 C 760,190 860,190 930,190"/>
+    </g>
+
+    <!-- Packets -->
+    <g filter="url(#soft)">
+      <circle r="6" fill="#38bdf8">
+        <animateMotion dur="3.5s" repeatCount="indefinite" rotate="auto">
+          <mpath xlink:href="#p1"/>
+        </animateMotion>
+      </circle>
+      <circle r="6" fill="#4ade80">
+        <animateMotion dur="3.5s" begin="0.6s" repeatCount="indefinite" rotate="auto">
+          <mpath xlink:href="#p2"/>
+        </animateMotion>
+      </circle>
+      <circle r="6" fill="#c4b5fd">
+        <animateMotion dur="3.2s" begin="0.3s" repeatCount="indefinite" rotate="auto">
+          <mpath xlink:href="#p3"/>
+        </animateMotion>
+      </circle>
+    </g>
+
+    <!-- Labels -->
+    <text x="260" y="98" fill="#93c5fd">TLS</text>
+    <text x="710" y="98" fill="#86efac">mTLS</text>
+    <text x="760" y="210" fill="#ddd6fe">Private Link</text>
+  </g>
+</svg>
