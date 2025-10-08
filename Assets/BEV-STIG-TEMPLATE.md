@@ -1,4 +1,4 @@
-# CHATGPT PROMPT FOR USING ON DIFFERENT FINDINGS
+# ChatGPT Autofill Prompt (use this to generate similar reports on future findings)
 You are a cybersecurity analyst preparing a short, professional Markdown summary for a STIG or vulnerability finding.
 
 Rules:
@@ -9,7 +9,7 @@ Rules:
 - Include PowerShell or Bash commands if applicable.
 - No emojis, icons, or decorative symbols.
 
-# CREATED BY CHATPT
+# EXAMPLE GENERATED REPORT FROM CHATGPT
 # STIG / Vulnerability Finding Summary
 
 ## Finding Title
