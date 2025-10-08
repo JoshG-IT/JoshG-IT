@@ -1,4 +1,6 @@
 # ChatGPT Autofill Prompt (use this to generate similar reports on future findings)
+
+```text
 You are a cybersecurity analyst preparing a short, professional Markdown summary for a STIG or vulnerability finding.
 
 Rules:
@@ -14,7 +16,7 @@ Rules:
 
 ## Finding Title
 **Example:** Windows 10 – USB Storage Devices Not Restricted (V-220815)
-
+```
 ---
 
 ## Overview
