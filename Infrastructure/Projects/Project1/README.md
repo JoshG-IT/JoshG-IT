@@ -1,4 +1,4 @@
-# 🏗️ Project TitanCloud
+# Project TitanCloud
 
 <p align="center">
   <img src="../../../Assets/infraproject1.svg" alt="Infrastructure Project Banner" width="720">
