@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2520" height="820" viewBox="0 0 1440 470">
+  <defs>
+    <style>
+      .bg { fill:#0F172A; }
+      .box { fill:#0F172A; stroke:#1F2937; stroke-width:2; rx:20; }
+      .text { font-family:'Segoe UI',system-ui; fill:#E6EEF8; font-weight:600; text-anchor:middle; }
+      .sub { fill:#9FB3C8; font-weight:400; text-anchor:middle; }
+      .arrow { stroke:#38BDF8; stroke-width:3; fill:none; marker-end:url(#arrow); }
+      .dot { fill:#38BDF8; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1440" height="470"/>
+
+  <!-- Title -->
+  <text x="720" y="60" font-size="34" class="text">Vulnerability Management Overview</text>
+  <text x="720" y="92" font-size="16" class="sub">End-to-End Process at a Glance</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(80,160)">
+    <rect class="box" width="280" height="160"/>
+    <text x="140" y="90" font-size="30" class="text">1️⃣ Expose</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(420,160)">
+    <rect class="box" width="280" height="160"/>
+    <text x="140" y="90" font-size="30" class="text">2️⃣ Assess</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(760,160)">
+    <rect class="box" width="280" height="160"/>
+    <text x="140" y="90" font-size="30" class="text">3️⃣ Prioritize</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(1100,160)">
+    <rect class="box" width="280" height="160"/>
+    <text x="140" y="90" font-size="30" class="text">4️⃣ Remediate</text>
+  </g>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M360 240 C380 240,400 240,420 240"/>
+  <path class="arrow" d="M700 240 C720 240,740 240,760 240"/>
+  <path class="arrow" d="M1040 240 C1060 240,1080 240,1100 240"/>
+
+  <!-- Dots under each for subtle animation effect -->
+  <circle cx="220" cy="340" r="6" class="dot"/>
+  <circle cx="560" cy="340" r="6" class="dot"/>
+  <circle cx="900" cy="340" r="6" class="dot"/>
+  <circle cx="1240" cy="340" r="6" class="dot"/>
+</svg>
