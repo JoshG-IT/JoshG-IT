@@ -1,46 +1,58 @@
-# Azure Windows 10 Exposure & Vulnerability Management Lab
+# Windows 10 Exposure & Vulnerability Management Lab
 
 <p align="center">
-  <img src="/Assets/Cybersecurity/Projects/Project1/project1.svg" alt="Project Banner" width="960">
+  <img src="/Assets/EVM-project-image1.svg" alt="Banner" width="100%">
 </p>
+
+---
 
 ## Overview
-This lab simulates a controlled exposure environment where built-in protections on Windows 10 virtual machines are intentionally disabled. The goal is to understand how vulnerabilities are discovered, assessed, prioritized, and remediated using Microsoft services. You’ll gain a practical, step-by-step experience of how risk posture changes as configurations are weakened and later restored.
+This lab intentionally relaxes selected controls on Windows 10 virtual machines in a safe, isolated environment, then walks the full vulnerability-management loop: discovery, prioritization, remediation, and verification.
+
+---
 
 ## How It Works
-1. **Setup Phase** – Deploy Windows 10 virtual machines and adjust configurations to intentionally weaken security (e.g., disabling Defender, updates, and firewall).  
-2. **Assessment Phase** – Run scans and inventory checks using Microsoft vulnerability management capabilities to identify potential risks.  
-3. **Prioritization Phase** – Evaluate findings based on severity, exploitability, and business impact.  
-4. **Remediation Phase** – Apply patches, re-enable baselines, and enforce compliance settings.  
-5. **Verification Phase** – Re-scan and compare the new results to confirm reduced exposure.
 
 <p align="center">
-  <img src="/Assets/Cybersecurity/Projects/Project1/project2.svg" alt="Flow Diagram" width="960">
+  <img src="/Assets/EVM-project-image2.svg" alt="High-Level Flow" width="95%">
 </p>
+
+1. **Expose** — Create lab VMs and lower specific baselines to simulate risk.  
+2. **Assess** — Inventory systems and scan for vulnerabilities/misconfigurations.  
+3. **Prioritize** — Rank by severity, exploitability, and exposure; map to SLAs.  
+4. **Remediate** — Patch, re-enable baselines, and verify via re-scan & deltas.
+
+---
 
 ## Learning Focus
-- Setting up a secure and isolated environment for testing insecure configurations  
-- Observing effects of disabling key Windows 10 protections  
-- Performing end-to-end vulnerability assessments using Microsoft services  
-- Applying remediation and verifying security posture improvements  
-- Understanding how real-world misconfigurations translate into measurable risk  
+- End-to-end vulnerability lifecycle practice  
+- Safe exposure simulation in a contained lab  
+- Evidence-based prioritization and SLA planning  
+- Verification and reporting for closure
 
-## Cost or Resource Composition
-The three animated rings represent how resource usage and focus shift across the lab’s lifecycle:
+---
 
-- **Exposure Setup** – Initial VM provisioning and configuration adjustments  
-- **Assessment & Prioritization** – Discovery and triage of vulnerabilities  
-- **Remediation & Verification** – Patching, baselining, and re-scanning  
-
-These proportions dynamically change to visualize where most effort or cost occurs at different phases of the project.
+## Resource / Effort Composition
 
 <p align="center">
-  <img src="/Assets/Cybersecurity/Projects/Project1/project3.svg" alt="Cost/Resource Composition" width="960">
+  <img src="/Assets/EVM-project-image3.svg" alt="Resource Composition" width="95%">
 </p>
 
+| Category              | Description                         | Share |
+|-----------------------|-------------------------------------|:----:|
+| Exposure Simulation   | Lab setup, snapshots, rollback      | 25%  |
+| Assessment            | Scanning, evidence collection       | 30%  |
+| Prioritization        | Risk triage, SLA mapping            | 20%  |
+| Remediation & Verify  | Patching, validation, reporting     | 25%  |
+
+---
+
 ## Skills Gained
-- Vulnerability discovery and triage  
-- Patch and configuration management on Windows 10  
-- Baseline creation, rollback, and verification  
-- Risk communication and reporting  
-- Systematic troubleshooting, documentation, and iteration
+- Vulnerability assessment & reporting  
+- Patch/baseline management workflow  
+- Risk scoring & SLA discipline  
+- Lab design and change verification
+
+---
+
+*All work performed only in an isolated lab environment.*
