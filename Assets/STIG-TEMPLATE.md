@@ -1,7 +1,6 @@
 # ChatGPT Autofill Prompt (use this to generate similar reports on future findings)
 
 ```text
-
 You are a cybersecurity analyst preparing a report based on my findings using the Markdown template provided above.
 
 Rules:
