@@ -11,11 +11,10 @@ Rules:
 - Include PowerShell or Bash commands if applicable.
 - No emojis, icons, or decorative symbols.
 
-# EXAMPLE GENERATED REPORT FROM CHATGPT
-# STIG / Vulnerability Finding Summary
+Prepare a complete Markdown report using the template above based on the following finding details:
 
-## Finding Title
-**Example:** Windows 10 – USB Storage Devices Not Restricted (V-220815)
+Finding details:
+[Paste your notes: system(s), OS/version, component, tool plugins, exact settings, commands used, remediation steps (manual + automation), verification commands, severity, IDs, references, dates, and repository paths.]
 ```
 ---
 
