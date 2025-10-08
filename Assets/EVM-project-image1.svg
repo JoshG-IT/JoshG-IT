@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260">
+  <!-- solid background -->
+  <rect width="960" height="260" fill="#0F172A"/>
+  <!-- centered title -->
+  <text
+    x="480"
+    y="140"
+    text-anchor="middle"
+    font-family="Segoe UI, system-ui, Arial, sans-serif"
+    font-size="28"
+    font-weight="700"
+    fill="#38BDF8">
+    Windows 10 Exposure &amp; Vulnerability Management Lab
+  </text>
+</svg>
