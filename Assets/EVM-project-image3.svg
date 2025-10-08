@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="520" viewBox="0 0 1440 520">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2"/>
+    </linearGradient>
+    <style>
+      .bg { fill:#0F172A; }
+      .card { fill:#0F172A; stroke:#1F2937; rx:16; filter:url(#shadow); }
+      .t { font-family:'Segoe UI',system-ui; }
+      .h { fill:#E6EEF8; font-weight:600; }
+      .s { fill:#9FB3C8; }
+      .spark { fill:none; stroke:#93C5FD; stroke-width:2; }
+      .grid { stroke:#1F2937; stroke-opacity:0.5; }
+      @keyframes draw {
+        0% { stroke-dasharray: 0 600; }
+        100% { stroke-dasharray: 600 0; }
+      }
+      .anim { animation: draw 4s ease-in-out infinite alternate; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1440" height="520"/>
+  <text class="t h" x="48" y="56" font-size="26">Security Posture Scorecard</text>
+  <text class="t s" x="48" y="86" font-size="14">Key outcomes of this project visualized for quick review</text>
+
+  <!-- 4 KPI cards -->
+  <g transform="translate(48,120)">
+    <!-- Card 1: Risk Score Delta -->
+    <g transform="translate(0,0)">
+      <rect class="card" x="0" y="0" width="320" height="160"/>
+      <text class="t s" x="16" y="30" font-size="12">Risk Score Δ (30d)</text>
+      <text class="t h" x="16" y="60" font-size="28">-37%</text>
+      <g transform="translate(16,88)">
+        <line x1="0" y1="56" x2="288" y2="56" class="grid"/>
+        <path d="M0,52 C40,40 80,44 120,36 C160,28 200,32 240,18 C270,10 288,14 288,14" class="spark anim"/>
+      </g>
+    </g>
+
+    <!-- Card 2: Patch SLA -->
+    <g transform="translate(352,0)">
+      <rect class="card" x="0" y="0" width="320" height="160"/>
+      <text class="t s" x="16" y="30" font-size="12">Patch SLA (≤14 days)</text>
+      <text class="t h" x="16" y="60" font-size="28">92%</text>
+      <g transform="translate(16,88)">
+        <line x1="0" y1="56" x2="288" y2="56" class="grid"/>
+        <path d="M0,60 C40,50 80,48 120,40 C160,32 200,28 240,26 C270,24 288,22 288,22" class="spark anim"/>
+      </g>
+    </g>
+
+    <!-- Card 3: Coverage -->
+    <g transform="translate(704,0)">
+      <rect class="card" x="0" y="0" width="320" height="160"/>
+      <text class="t s" x="16" y="30" font-size="12">Endpoint Coverage (scanned)</text>
+      <text class="t h" x="16" y="60" font-size="28">98%</text>
+      <g transform="translate(16,88)">
+        <line x1="0" y1="56" x2="288" y2="56" class="grid"/>
+        <path d="M0,70 C40,62 80,58 120,50 C160,44 200,40 240,36 C270,34 288,30 288,30" class="spark anim"/>
+      </g>
+    </g>
+
+    <!-- Card 4: MTTR & Open Criticals -->
+    <g transform="translate(1056,0)">
+      <rect class="card" x="0" y="0" width="320" height="160"/>
+      <text class="t s" x="16" y="30" font-size="12">MTTR (High) • Open Criticals</text>
+      <text class="t h" x="16" y="60" font-size="28">6.2 days • 12</text>
+      <g transform="translate(16,88)">
+        <line x1="0" y1="56" x2="288" y2="56" class="grid"/>
+        <path d="M0,44 C40,46 80,50 120,52 C160,48 200,38 240,30 C270,26 288,28 288,28" class="spark anim"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Expanded lower strip: milestone timeline -->
+  <g transform="translate(48,320)">
+    <rect class="card" x="0" y="0" width="1328" height="148"/>
+    <text class="t s" x="16" y="28" font-size="12">Remediation Timeline</text>
+    <g transform="translate(16,56)">
+      <line x1="0" y1="36" x2="1296" y2="36" stroke="url(#pulseGrad)" stroke-width="3"/>
+      <!-- milestones -->
+      <g>
+        <circle cx="80"  cy="36" r="6" fill="#38BDF8"/><text class="t s" x="64" y="70" font-size="11">Inventory</text>
+        <circle cx="360" cy="36" r="6" fill="#38BDF8"/><text class="t s" x="332" y="70" font-size="11">Scan</text>
+        <circle cx="640" cy="36" r="6" fill="#38BDF8"/><text class="t s" x="612" y="70" font-size="11">Plan</text>
+        <circle cx="920" cy="36" r="6" fill="#38BDF8"/><text class="t s" x="892" y="70" font-size="11">Patch</text>
+        <circle cx="1200" cy="36" r="6" fill="#38BDF8"/><text class="t s" x="1168" y="70" font-size="11">Verify</text>
+      </g>
+    </g>
+  </g>
+</svg>
