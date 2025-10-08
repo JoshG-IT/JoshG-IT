@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
+  <!-- Background -->
+  <rect width="720" height="200" fill="#0f172a"/>
+
+  <!-- Blueprint pulse line -->
+  <linearGradient id="infraLine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0ea5e9">
+      <animate attributeName="stop-color" values="#0ea5e9;#38bdf8;#0ea5e9" dur="5s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#38bdf8">
+      <animate attributeName="stop-color" values="#38bdf8;#0ea5e9;#38bdf8" dur="5s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+
+  <!-- Animated pulse line -->
+  <rect x="60" y="160" width="600" height="3" fill="url(#infraLine)">
+    <animate attributeName="width" values="100;600;100" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="60" y="100" font-family="JetBrains Mono, monospace" font-size="40" fill="#e2e8f0">
+    Infrastructure Project 1
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Faint grid effect -->
+  <g stroke="#1e293b" stroke-width="0.5" opacity="0.2">
+    <line x1="0" y1="60" x2="720" y2="60"/>
+    <line x1="0" y1="100" x2="720" y2="100"/>
+    <line x1="0" y1="140" x2="720" y2="140"/>
+  </g>
+</svg>
