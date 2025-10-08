@@ -1,26 +1,42 @@
-# 🧱 Project 1
+# 🚀 Project Title
 
-**Goal:** Describe what this project demonstrates (e.g., configuration, deployment, or automation).
-
----
-
-## 🧰 Tools Used
-- Example Tool 1  
-- Example Tool 2  
+<p align="center">
+  <!-- Reference shared assets in the root folder -->
+  <img src="../../../Assets/logo.svg" alt="Project Logo" width="720">
+</p>
 
 ---
 
-## ⚙️ Steps
-1. Step 1  
-2. Step 2  
-3. Step 3  
+## 🌍 Overview
+Describe your project in 2–3 sentences.  
+Explain what this topic (Infrastructure, Networking, Cybersecurity, or AI) is demonstrating.
 
 ---
 
-## 🧠 Lessons Learned
-- Lesson 1  
-- Lesson 2  
+## ⚙️ Objectives
+- Objective 1  
+- Objective 2  
+- Objective 3  
 
 ---
 
-[🔙 Back to Portfolio Home](https://github.com/JoshG-IT)
+## 🧠 Learning Focus
+What will students learn or practice?  
+List tools, platforms, or concepts here (for example: Terraform, Azure, Firewalls, Packet Tracing, AI Models, etc.)
+
+---
+
+## 🧱 Architecture or Diagram
+<p align="center">
+  <img src="../../../Assets/architecture.svg" alt="Architecture Diagram" width="960">
+</p>
+
+(Optional) You can replace this with a custom diagram for your own project or topic.
+
+---
+
+## ⚡ Quick Start
+```bash
+# Example commands
+git clone https://github.com/JoshG-IT/JoshG-IT.git
+cd Infrastructure/Projects/Project1
