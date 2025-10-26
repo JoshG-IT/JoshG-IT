@@ -1,4 +1,4 @@
-# Microsoft Azure Active Director Lab
+# Microsoft Azure Active Directory Lab
 ---
 ## Overview
 This project demonstrates how to deploy a **Active Directory environment in Azure** using two virtual machines.
