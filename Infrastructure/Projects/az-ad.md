@@ -52,7 +52,7 @@ After policies apply, they can still see the file but **can’t set it as wallpa
 | PUT SCREENSHOT HERE| Group Policy Management Console showing all enforced policies |
 | PUT SCREENSHOT HERE| Company logo wallpaper successfully applied through GPO |
 | PUT SCREENSHOT HERE| Cleaning up all resources in Azure Resource Group to avoid charges |
-| PUT SCREENSHOT HERE| Analyse cost of resources for this lab |
+| PUT SCREENSHOT HERE| Cost Analysis of resources for this lab |
 ---
 ## Technical Highlights
 - Secure RDP access limited to a single external IP
