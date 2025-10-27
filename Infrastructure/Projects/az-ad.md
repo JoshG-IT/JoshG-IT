@@ -3,6 +3,7 @@
 ## Overview
 This project demonstrates how to deploy a **Active Directory environment in Azure** using two virtual machines.
 It’s designed for training and demonstration - showing how a Windows Server domain, client join, and Group Policies work together.
+---
 **Key Components**
 - **DC01:** Windows Server 2022 (AD DS, DNS, DHCP)
 - **CLIENT01:** Windows 11 Pro (domain joined)
