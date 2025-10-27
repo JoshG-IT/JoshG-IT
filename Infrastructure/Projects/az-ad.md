@@ -2,7 +2,7 @@
 ---
 ## Overview
 This project demonstrates how to deploy a **Active Directory environment in Azure** using two virtual machines.
-It’s designed for training and demonstration — showing how a Windows Server domain, client join, and Group Policies work together.
+It’s designed for training and demonstration - showing how a Windows Server domain, client join, and Group Policies work together.
 **Key Components**
 - **DC01:** Windows Server 2022 (AD DS, DNS, DHCP)
 - **CLIENT01:** Windows 11 Pro (domain joined)
@@ -30,7 +30,7 @@ It’s designed for training and demonstration — showing how a Windows Server 
 |-----|----------|--------|
 | **Disable Control Panel** | Restrict system access | Users see “Restricted by your administrator” |
 | **Prevent Wallpaper Change** | Enforce shared wallpaper | Company logo appears on all desktops |
-| **Remove Task Manager** | Prevent task termination | Ctrl + Alt + Del → Task Manager greyed out |
+| **Remove Task Manager** | Prevent task termination | Ctrl + Alt + Del -> Task Manager greyed out |
 | **Allow RDP for HR** | Enable remote login | Domain users can RDP into CLIENT01 |
 ---
 ## Fun Step – “Desktop Image added”
