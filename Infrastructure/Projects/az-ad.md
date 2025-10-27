@@ -57,7 +57,7 @@ After the policies have been applied, the user can still see the file but **canâ
 ## Technical Highlights
 - Secure RDP access limited to a single external IP
 - Custom DNS (192.168.100.10) for internal name resolution
-- Demonstrates Azure **Fabric DHCP** vs. traditional server DHCP
+- Demonstrates Azure **Fabric DHCP** vs. traditional server DHCP using an IP address/subnet vs DHCP role
 - Enforces domain policies with OU-scoped GPOs
 - Uses shared UNC path (`\\DC01\Company\logo.jpg`) for company wallpaper
 ---
