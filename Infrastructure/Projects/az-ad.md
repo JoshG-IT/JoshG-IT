@@ -24,7 +24,7 @@ It’s designed for training and demonstration - showing how a Windows Server do
 | **Virtual Network (VNet)** | Private IP network (192.168.100.0/24) | Simulates an internal LAN |
 | **Network Security Group (NSG)** | Firewall to limit inbound RDP | Allows only instructor’s IP on port 3389 |
 | **DC01 (Server)** | Domain Controller | Runs AD DS, DNS, optional DHCP |
-| **CLIENT01 (Workstation)** | Domain-joined client | Used for user login and GPO testing |
+| **CLIENT01 (Client)** | Domain-joined client | Used for user login and GPO testing |
 ---
 ## Key Group Policies Demonstrated
 | GPO | Purpose | Result |
