@@ -43,13 +43,13 @@ After the policies have been applied, the user can still see the file but **can�
 |--------|-------------|
 | PUT SCREENSHOT HERE| Resource Group created in Azure to contain all lab components |
 | PUT SCREENSHOT HERE| Virtual Network `vnet-adlab` created with custom subnet |
-| PUT SCREENSHOT HERE| NSG rule allowing RDP only from instructor’s public IP |
+| PUT SCREENSHOT HERE| NSG rule allowing RDP only from student’s public IP |
 | PUT SCREENSHOT HERE| Windows Server 2022 VM created (DC01) |
 | PUT SCREENSHOT HERE| Windows 11 Pro client VM created, background changed and domain joined |
 | PUT SCREENSHOT HERE| AD DS role installed and DC01 promoted to domain controller |
-| PUT SCREENSHOT HERE| GPO preventing users from opening Control Panel |
-| PUT SCREENSHOT HERE| GPO disabling Task Manager for domain users |
-| PUT SCREENSHOT HERE| GPO pushing company logo to domain users in HR |
+| PUT SCREENSHOT HERE| GPO preventing users (HR) from opening Control Panel |
+| PUT SCREENSHOT HERE| GPO disabling Task Manager for users part of HR |
+| PUT SCREENSHOT HERE| GPO pushing company logo to users in HR |
 | PUT SCREENSHOT HERE| Group Policy Management Console showing all enforced policies |
 | PUT SCREENSHOT HERE| Cleaning up all resources in Azure Resource Group to avoid charges |
 | PUT SCREENSHOT HERE| Cost Analysis of resources for this lab |
