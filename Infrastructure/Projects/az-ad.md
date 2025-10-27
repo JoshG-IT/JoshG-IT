@@ -36,7 +36,7 @@ It’s designed for training and demonstration - showing how a Windows Server do
 ---
 ## Fun Step – “Desktop Image added”
 Before applying GPOs, users can log in and put a image on a desktop. If you don't do this step, remove it from the description.
-After the policies have been applied, they can still see the file but **can’t set it as wallpaper**, showing how Group Policy overrides local control.
+After the policies have been applied, the user can still see the file but **can’t set it as wallpaper**, showing how Group Policy overrides local control.
 ---
 ## Screenshots
 | Image | Description |
