@@ -58,7 +58,7 @@ After policies apply, they can still see the file but **can’t set it as wallpa
 - Custom DNS (192.168.100.10) for internal name resolution
 - Demonstrates Azure **Fabric DHCP** vs. traditional server DHCP
 - Enforces domain policies with OU-scoped GPOs
-- Uses shared UNC path (`\DC01\Company\logo.jpg`) for company wallpaper
+- Uses shared UNC path (`\\DC01\Company\logo.jpg`) for company wallpaper
 ---
 ## Estimated Cost
 | Resource | Type | Cost/hr |
