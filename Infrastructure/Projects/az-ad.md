@@ -31,7 +31,7 @@ It’s designed for training and demonstration — showing how a Windows Server 
 | **Disable Control Panel** | Restrict system access | Users see “Restricted by your administrator” |
 | **Prevent Wallpaper Change** | Enforce shared wallpaper | Company logo appears on all desktops |
 | **Remove Task Manager** | Prevent task termination | Ctrl + Alt + Del → Task Manager greyed out |
-| **Allow RDP for Students** | Enable remote login | Domain users can RDP into CLIENT01 |
+| **Allow RDP for HR** | Enable remote login | Domain users can RDP into CLIENT01 |
 ---
 ## Fun Step – “Desktop Image added”
 **" Before applying GPOs, users log in and put a image on a desktop ”**.
