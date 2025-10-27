@@ -34,7 +34,7 @@ It’s designed for training and demonstration - showing how a Windows Server do
 | **Allow RDP for HR** | Enable remote login | Domain users can RDP into CLIENT01 |
 ---
 ## Fun Step – “Desktop Image added”
-**" Before applying GPOs, users log in and put a image on a desktop ”**.
+**" Before applying GPOs, users can log in and put a image on a desktop. If you don't do this step remove it from the description. ”**.
 After policies apply, they can still see the file but **can’t set it as wallpaper**, showing how Group Policy overrides local control.
 ---
 ## Screenshots
@@ -44,7 +44,7 @@ After policies apply, they can still see the file but **can’t set it as wallpa
 | PUT SCREENSHOT HERE| Virtual Network `vnet-adlab` created with custom subnet |
 | PUT SCREENSHOT HERE| NSG rule allowing RDP only from instructor’s public IP |
 | PUT SCREENSHOT HERE| Windows Server 2022 VM created (DC01) |
-| PUT SCREENSHOT HERE| Windows 11 Pro client VM created and domain-joined |
+| PUT SCREENSHOT HERE| Windows 11 Pro client VM created, background changed and domain joined |
 | PUT SCREENSHOT HERE| AD DS role installed and DC01 promoted to domain controller |
 | PUT SCREENSHOT HERE| GPO preventing users from opening Control Panel |
 | PUT SCREENSHOT HERE| GPO disabling Task Manager for domain users |
