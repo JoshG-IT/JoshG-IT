@@ -14,7 +14,7 @@ It’s designed for training and demonstration - showing how a Windows Server do
 - Understand how **Active Directory** manages users and computers
 - See how **Azure Fabric DHCP** differs from on-prem DHCP
 - Apply **Group Policy Objects (GPOs)** for control and security
-- Demonstrate **RDP security and centralized management**
+- Demonstrate **RDP and centralized management**
 - Learn how a single server can manage multiple users and machines
 ---
 ## Core Lab Setup
@@ -77,4 +77,5 @@ After the policies have been applied, the user can still see the file but **can�
 |✅ Wallpaper, Control Panel, and Task Manager restrictions enforced|
 |✅ RDP access functioning for domain users|
 |✅ All resources deleted post-lab to avoid costs|
+|✅ Summary of Operation Expenditure|
 ---
