@@ -165,11 +165,11 @@ Students must investigate using tools such as **Event Viewer**, **DNS Manager**,
 ---
 
 ## Results
-AD environment deployed on a single host machine  
-Verified redundancy with DC02 (Server Core)  
-GPOs, DHCP, DNS, and shares functioning correctly  
-Simulated troubleshooting enhances operational skills  
-Fully documented lab for IT training and demonstrations  
+☑ AD environment deployed on a single host machine  
+☑ Verified redundancy with DC02 (Server Core)  
+☑ GPOs, DHCP, DNS, and shares functioning correctly  
+☑ Simulated troubleshooting enhances operational skills  
+☑ Fully documented lab for IT training and demonstrations  
 
 ---
 
