@@ -33,6 +33,10 @@ Applies To: All repositories, labs, and educational templates under this account
 
 ---
 
+# VirtualBox Active Directory Lab
+
+---
+
 
 ## Overview
 This project demonstrates the deployment of a **complete on-premises Active Directory environment** using **Windows Server 2022** and **Windows 11 Pro** virtual machines inside **VirtualBox**.  
@@ -172,8 +176,3 @@ Fully documented lab for IT training and demonstrations
 ## Summary
 A **Active Directory on-premises lab** built from using **VirtualBox**, designed to replicate a AD environment.  
 Demonstrates **infrastructure design, configuration, redundancy, policy enforcement, and troubleshooting**—all inside a local, cost-free simulation.
-
----
-
-## Tags & Skills
-`Active Directory`  `DNS`  `DHCP`  `Group Policy`  `Windows Server 2022`  `Server Core`  `VirtualBox`  `IT Operations`  `Troubleshooting`  `SysAdmin Lab`  `Networking Basics`  `Infrastructure Design`
