@@ -1,45 +1,34 @@
 <!-- ============================================================
-ACTIVE DIRECTORY ON-PREMISES LAB (VIRTUALBOX EDITION)
-Student GitHub Template - Created by Joshua Gonzalez
-For Educational and Learning Showcase Use
+⚠️ EDUCATIONAL USE ONLY DISCLAIMER
+Author: Joshua Gonzalez
+Applies To: All repositories, labs, and educational templates under this account
 ============================================================ -->
 
-# Active Directory On-Premises Lab (VirtualBox Edition)
-
-> **Instructions for Students**
+> ## ⚠️ Educational Use Only — Read Before Proceeding  
 >
-> This repository is a **GitHub template** provided by **Joshua Gonzalez** for students who complete the *Active Directory On-Premises Lab* training.
-> 
-> After finishing your lab:
-> 1. **Copy this Markdown (README.md)** into your own GitHub repository.  
-> 2. Replace the sample text and screenshots with **your own work**.  
-> 3. Use this as your **IT portfolio showcase** to demonstrate your hands-on experience.  
+> **Purpose:**  
+> All content within any repository published by **Joshua Gonzalez** (including PDFs, Markdown files, scripts, templates, and lab instructions) is provided **strictly for educational, training, and demonstration purposes**.  
 >
-> The sections below help you structure your documentation — including:
-> - Lab overview and learning objectives  
-> - Configuration details (VMs, roles, IPs, etc.)  
-> - Screenshots of your own environment  
-> - Validation steps and summary of what you learned  
+> **Usage Conditions:**  
+> - These materials are **not intended for production or commercial use**.  
+> - You are fully responsible for **any configurations, deployments, or cloud costs** incurred while following these labs.  
+> - The author, **Joshua Gonzalez**, assumes **no liability** for data loss, misconfiguration, or financial impact caused by misuse or misunderstanding.  
+> - Do **not** include real credentials, company data, or personal information.  
+> - These labs exist for **learning, experimentation, and personal portfolio growth** only.  
 >
-> **Goal:** Build confidence in technical writing, professional documentation, and hands-on IT skills.
+> **Legal Notice:**  
+> By accessing or using these materials, you acknowledge that you understand and accept these terms in full.  
+>
+> Joshua Gonzalez — Educational Training Content.  
+> Redistribution or commercial resale of these materials (including anything produced or posted by Joshua Gonzalez) is **strictly prohibited without written consent**.
 
 ---
 
 [![Platform](https://img.shields.io/badge/Platform-VirtualBox-orange?style=for-the-badge&logo=virtualbox)](https://www.virtualbox.org/)
-[![Windows](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/)
+[![Windows Server](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows-server)
+[![Windows 11](https://img.shields.io/badge/Windows-11%20Pro-blueviolet?style=for-the-badge&logo=windows11)](https://www.microsoft.com/software-download/windows11)
 [![Purpose](https://img.shields.io/badge/Purpose-Student_Lab_Showcase-lightgrey?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Template_Ready-brightgreen?style=for-the-badge)]()
-
----
-
-> **⚠️ Educational Use Only**
->
-> This lab and its documentation template are provided for **educational and portfolio-building purposes** only.  
-> Students are free to copy, modify, and personalize this Markdown file for their own learning showcase.  
->
-> Do not reuse this material for **commercial or production systems**.  
->
-> © 2025 Joshua Gonzalez — Educational Template for Student Learning & Portfolio Development.
+[![Status](https://img.shields.io/badge/Status-Learning_Ready-brightgreen?style=for-the-badge)]()
 
 
 ---
