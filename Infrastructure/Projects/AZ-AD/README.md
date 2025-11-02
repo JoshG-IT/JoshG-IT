@@ -37,8 +37,8 @@ Applies To: All repositories, labs, and educational templates under this account
 ---
 
 ## Overview
-This lab demonstrates how to deploy an **Active Directory environment in Azure** using two virtual machines connected within a Virtual Network.  
-It is designed for **hands-on training and demonstration**, showing how a Windows Server domain, client join, and Group Policies operate in a cloud-based environment.
+This lab demonstrates how to deploy an **Active Directory environment in Azure** using two virtual machines connected within a **Virtual Network**.  
+It is designed for **hands-on training and demonstration**, showing how a Windows Server domain, client join, and Group Policies operate in a **cloud-based environment**.
 
 ---
 
@@ -48,86 +48,104 @@ It is designed for **hands-on training and demonstration**, showing how a Window
 | **DC01** | Windows Server 2022 | Hosts AD DS, DNS, and optional DHCP |
 | **CLIENT01** | Windows 11 Pro | Domain-joined client used for GPO testing |
 | **Virtual Network (VNet)** | Cloud Network | Private IP space (192.168.100.0/24) for internal communication |
-| **Network Security Group (NSG)** | Firewall | Allows inbound RDP only from instructor’s IP |
+| **Network Security Group (NSG)** | Firewall | Allows inbound RDP only from your public IP |
 | **Resource Group** | Management Container | Contains and organizes all Azure assets |
 | **Access** | Connectivity | Direct RDP (no Bastion) to minimize costs |
 
 ---
 
 ## Learning Objectives
-- Understand how **Active Directory (AD DS)** manages users and devices  
-- Compare **Azure Fabric DHCP** vs. traditional on-prem DHCP  
-- Apply **Group Policy Objects (GPOs)** for control and security  
-- Demonstrate **centralized user management** with RDP testing  
-- Practice **resource cleanup and cost awareness**
+- Deploy and configure **Active Directory Domain Services (AD DS)** in Azure  
+- Configure **NSG rules** to restrict RDP access securely  
+- Understand differences between **Azure Fabric DHCP** and traditional DHCP  
+- Apply **Group Policy Objects (GPOs)** for centralized management  
+- Test **domain join and user permissions** between cloud VMs  
+- Practice **resource cleanup and cost optimization**
 
 ---
 
 ## Core Lab Setup
 | Component | Purpose | Notes |
 |------------|----------|-------|
-| **Resource Group** | Logical container for Azure assets | Easy cleanup |
-| **Virtual Network (VNet)** | Simulated internal LAN | 192.168.100.0/24 subnet |
-| **Network Security Group (NSG)** | Restrict access | Only instructor IP on port 3389 |
-| **DC01 (Server)** | Domain Controller | AD DS, DNS, DHCP roles |
-| **CLIENT01 (Client)** | Domain-joined workstation | Verifies user/group access |
+| **Resource Group** | Logical container for Azure resources | Simplifies cleanup and management |
+| **Virtual Network (VNet)** | Internal communication network | 192.168.100.0/24 subnet |
+| **Network Security Group (NSG)** | Firewall control | Restricts RDP to your public IP on port 3389 |
+| **DC01 (Server)** | Domain Controller | Runs AD DS, DNS, DHCP (optional) |
+| **CLIENT01 (Client)** | Domain-joined workstation | Used for GPO validation and login tests |
 
 ---
 
-## Key Group Policies Demonstrated
+## Key Group Policies Implemented
 | GPO | Purpose | Result |
 |-----|----------|--------|
 | **Disable Control Panel** | Restrict access to system settings | “Restricted by your administrator” displayed |
-| **Prevent Wallpaper Change** | Enforce branding | Company logo set for all users |
-| **Remove Task Manager** | Prevent task termination | Task Manager disabled for standard users |
-| **Allow RDP for HR** | Grant remote login access | HR users allowed to RDP into CLIENT01 |
-
----
-
-## Fun Step – “Desktop Image Added”
-Before applying GPOs, users can set a custom desktop image.  
-After GPO enforcement, users can still see the file but **cannot set it as wallpaper**, illustrating **Group Policy precedence** over local settings.
-
----
-
-## Screenshots
-| Image | Description |
-|--------|-------------|
-| PUT SCREENSHOT HERE | Resource Group created |
-| PUT SCREENSHOT HERE | Virtual Network `vnet-adlab` created |
-| PUT SCREENSHOT HERE | NSG rule allowing RDP from instructor IP |
-| PUT SCREENSHOT HERE | Windows Server 2022 VM deployed (DC01) |
-| PUT SCREENSHOT HERE | Windows 11 Pro client joined to domain |
-| PUT SCREENSHOT HERE | AD DS role installed and DC01 promoted |
-| PUT SCREENSHOT HERE | Control Panel and Task Manager restricted via GPO |
-| PUT SCREENSHOT HERE | Wallpaper GPO applied successfully |
-| PUT SCREENSHOT HERE | Azure Cost Analysis after cleanup |
+| **Prevent Wallpaper Change** | Enforce corporate branding | Company wallpaper applied across clients |
+| **Disable Task Manager** | Block task termination | Task Manager disabled for standard users |
+| **Allow RDP for HR Group** | Grant limited RDP rights | HR users can RDP into CLIENT01 |
 
 ---
 
 ## Technical Highlights
-- **Secure RDP access** restricted to a single IP via NSG  
-- **Custom DNS** (192.168.100.10) for internal resolution  
-- **Azure DHCP** differs from on-prem DHCP (VNet-assigned IPs)  
-- **GPOs** enforce consistent desktop and access policies  
-- **Shared UNC path:** `\\DC01\Company\logo.jpg`  
-- **Resource cleanup** ensures cost efficiency  
+- **Secure RDP access** through NSG filtering (source IP restriction)  
+- **Custom DNS configuration** (192.168.100.10) for name resolution  
+- **Azure DHCP** automatically assigns internal IPs (no manual scope setup)  
+- **Group Policy enforcement** through Azure-hosted DC  
+- **Shared UNC path:** `\\DC01\Company\logo.jpg` used for wallpaper policy  
+- **Azure Cost Management** for estimating and monitoring resource usage  
+
+---
+
+## Validation Tasks
+☑ AD DS installed and DC01 promoted successfully  
+☑ CLIENT01 joined to `lab.local` domain  
+☑ GPOs applied (`gpresult /h C:\GPOReport.html`)  
+☑ Wallpaper and system restrictions verified  
+☑ HR group RDP access validated  
+☑ Azure resources deleted after testing  
+
+---
+
+## Screenshots (Optional)
+| Image | Description |
+|--------|-------------|
+| INSERT SCREENSHOT HERE | Resource Group created |
+| INSERT SCREENSHOT HERE | Virtual Network `vnet-adlab` created |
+| INSERT SCREENSHOT HERE | NSG rule allowing RDP from instructor IP |
+| INSERT SCREENSHOT HERE | Windows Server 2022 deployed as DC01 |
+| INSERT SCREENSHOT HERE | Windows 11 client joined to domain |
+| INSERT SCREENSHOT HERE | Control Panel GPO enforced |
+| INSERT SCREENSHOT HERE | Wallpaper GPO applied |
+| INSERT SCREENSHOT HERE | RDP allowed for HR User |
+| INSERT SCREENSHOT HERE | Azure Cost Analysis after cleanup |
+
+---
+
+## Resource Allocation
+| VM | OS | vCPU | RAM | Disk | Role |
+|----|----|------|-----|------|------|
+| **DC01** | Windows Server 2022 | 2 | 4 GB | 60 GB | Domain Controller |
+| **CLIENT01** | Windows 11 Pro | 2 | 4 GB | 60 GB | Client Workstation |
 
 ---
 
 ## Estimated Cost
-| Resource | Type | Cost/hr |
-|-----------|------|---------|
-| DC01 | B2s VM | ≈ $0.046 |
-| CLIENT01 | B2s VM | ≈ $0.046 |
+| Resource | Type | Approx. Cost/hr |
+|-----------|------|-----------------|
+| **DC01** | B2s VM | ≈ $0.046 |
+| **CLIENT01** | B2s VM | ≈ $0.046 |
 | **Total** |  | **≈ $0.09/hr (~$0.27 for 3 hrs)** |
 
 ---
 
 ## Results
-☑ Domain environment successfully deployed  
-☑ CLIENT01 joined to `lab.local`  
-☑ GPOs applied and verified (`gpresult /h C:\GPOReport.html`)  
-☑ Wallpaper, Control Panel, and Task Manager restrictions enforced  
-☑ RDP tested and functioning  
-☑ Resources deleted to prevent cost overrun  
+☑ Domain deployed successfully in Azure  
+☑ CLIENT01 verified domain membership and GPO application  
+☑ NSG confirmed secure RDP restriction  
+☑ Cost estimation validated in Azure portal  
+☑ All assets cleaned up post-lab to avoid charges  
+
+---
+
+## Summary
+A **Microsoft Azure-hosted Active Directory lab** that mirrors on-premises functionality in the cloud.  
+Demonstrates **domain services, GPOs, access control, and cost efficiency**—ideal for **IT training and cloud-based system administration practice**.
