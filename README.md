@@ -23,8 +23,14 @@
 <h3 style="font-size:28px;margin-bottom:12px;">🖥️ Infrastructure</h3>
 
 <p>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Infrastructure/Projects/az-ad.md" title="Infrastructure Project 1">
-    <img height="40" src="https://img.shields.io/badge/Project%201-687C9C?style=for-the-badge&labelColor=1F2225" alt="Infrastructure Project 1"/>
+  <a href="Infrastructure/Projects/VBOX-ONPREM-AD/README.md" title="VBOX AD">
+    <img height="40" src="https://img.shields.io/badge/VBOX AD%20-687C9C?style=for-the-badge&labelColor=1F2225" alt="VBOX AD"/>
+  </a>
+</p>
+
+<p>
+  <a href="Infrastructure/Projects/AZ-AD/README.md" title="Infrastructure AZURE AD">
+    <img height="40" src="https://img.shields.io/badge/AZURE AD%20-687C9C?style=for-the-badge&labelColor=1F2225" alt="AZURE AD"/>
   </a>
 </p>
 
