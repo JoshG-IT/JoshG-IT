@@ -27,7 +27,7 @@ Applies To: All repositories, labs, and educational templates under this account
 [![Platform](https://img.shields.io/badge/Platform-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure)](https://portal.azure.com)
 [![Windows Server](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows-server)
 [![Windows 11](https://img.shields.io/badge/Windows-11%20Pro-blueviolet?style=for-the-badge&logo=windows11)](https://www.microsoft.com/software-download/windows11)
-[![Purpose](https://img.shields.io/badge/Purpose-Cloud_Active_Directory_Lab-lightgrey?style=for-the-badge)]()
+[![Purpose](https://img.shields.io/badge/Purpose-Azure_Active_Directory_Lab-lightgrey?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Learning_Ready-brightgreen?style=for-the-badge)]()
 
 ---
