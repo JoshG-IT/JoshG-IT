@@ -35,11 +35,11 @@
 </p>
 
 <p style="margin-top:14px;">
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Infrastructure/How-Tos" title="Infrastructure How-Tos">
-    <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="Infrastructure How-Tos"/>
+  <a href="https://github.com/JoshG-IT/Infrastructure/tree/6bcb63242da7cf53eaf6294fa7aa5122e2c714e3/How-Tos" title="How-Tos">
+    <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="How-Tos"/>
   </a>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Infrastructure/Cheat-Sheets" title="Infrastructure Cheat Sheets">
-    <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="Infrastructure Cheat Sheets"/>
+  <a href="https://github.com/JoshG-IT/Infrastructure/tree/6bcb63242da7cf53eaf6294fa7aa5122e2c714e3/Cheat-Sheets" title="Cheat Sheets">
+    <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="Cheat Sheets"/>
   </a>
 </p>
 </td>
@@ -49,16 +49,16 @@
 <h3 style="font-size:28px;margin-bottom:12px;">🌐 Networking</h3>
 
 <p>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Networking/Projects/Project1" title="Networking Project 1">
-    <img height="40" src="https://img.shields.io/badge/Project%201-5F8D89?style=for-the-badge&labelColor=1F2225" alt="Networking Project 1"/>
+  <a href="https://github.com/JoshG-IT/Networking/tree/33203b5d7acc65631bbf2abdab2e8d9637890d31/Projects" title="Project 1">
+    <img height="40" src="https://img.shields.io/badge/Project%201-5F8D89?style=for-the-badge&labelColor=1F2225" alt="Project 1"/>
   </a>
 </p>
 
 <p style="margin-top:14px;">
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Networking/How-Tos" title="Networking How-Tos">
+  <a href="https://github.com/JoshG-IT/Networking/tree/33203b5d7acc65631bbf2abdab2e8d9637890d31/How-tos" title="Networking How-Tos">
     <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="Networking How-Tos"/>
   </a>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Networking/Cheat-Sheets" title="Networking Cheat Sheets">
+  <a href="https://github.com/JoshG-IT/Networking/tree/33203b5d7acc65631bbf2abdab2e8d9637890d31/Cheat-Sheets" title="Networking Cheat Sheets">
     <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="Networking Cheat Sheets"/>
   </a>
 </p>
@@ -71,17 +71,17 @@
 <h3 style="font-size:28px;margin-bottom:12px;">🔒 Cybersecurity</h3>
 
 <p>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Cybersecurity/Projects/Project1" title="Cybersecurity Project 1">
-    <img height="40" src="https://img.shields.io/badge/Project%201-7C6CA8?style=for-the-badge&labelColor=1F2225" alt="Cybersecurity Project 1"/>
+  <a href="https://github.com/JoshG-IT/Cybersecurity/tree/5c3e05c3751f4a1e77c19cb899fcbccedc7fbc6d/Projects" title="Project 1">
+    <img height="40" src="https://img.shields.io/badge/Project%201-7C6CA8?style=for-the-badge&labelColor=1F2225" alt="Project 1"/>
   </a>
 </p>
 
 <p style="margin-top:14px;">
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Cybersecurity/How-Tos" title="Cybersecurity How-Tos">
-    <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="Cybersecurity How-Tos"/>
+  <a href="https://github.com/JoshG-IT/Cybersecurity/tree/5c3e05c3751f4a1e77c19cb899fcbccedc7fbc6d/How-Tos" title="How-Tos">
+    <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="How-Tos"/>
   </a>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/Cybersecurity/Cheat-Sheets" title="Cybersecurity Cheat Sheets">
-    <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="Cybersecurity Cheat Sheets"/>
+  <a href="https://github.com/JoshG-IT/Cybersecurity/tree/5c3e05c3751f4a1e77c19cb899fcbccedc7fbc6d/Cheat-Sheets" title="Cheat Sheets">
+    <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="Cheat Sheets"/>
   </a>
 </p>
 </td>
@@ -90,16 +90,16 @@
 <h3 style="font-size:28px;margin-bottom:12px;">🤖 AI</h3>
 
 <p>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/AI/Projects/Project1" title="AI Project 1">
-    <img height="40" src="https://img.shields.io/badge/Project%201-AE9E63?style=for-the-badge&labelColor=1F2225" alt="AI Project 1"/>
+  <a href="https://github.com/JoshG-IT/Artificial-Intelligence/tree/514875ab0710a4baadbab4cf3850141aac1ac3ae/Projects" title="Project 1">
+    <img height="40" src="https://img.shields.io/badge/Project%201-AE9E63?style=for-the-badge&labelColor=1F2225" alt="Project 1"/>
   </a>
 </p>
 
 <p style="margin-top:14px;">
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/AI/How-Tos" title="AI How-Tos">
+  <a href="https://github.com/JoshG-IT/Artificial-Intelligence/tree/514875ab0710a4baadbab4cf3850141aac1ac3ae/How-tos" title="AI How-Tos">
     <img height="30" src="https://img.shields.io/badge/How--Tos-50555B?style=flat&labelColor=1F2225" alt="AI How-Tos"/>
   </a>
-  <a href="https://github.com/JoshG-IT/JoshG-IT/tree/main/AI/Cheat-Sheets" title="AI Cheat Sheets">
+  <a href="https://github.com/JoshG-IT/Artificial-Intelligence/tree/514875ab0710a4baadbab4cf3850141aac1ac3ae/Cheat-Sheets" title="AI Cheat Sheets">
     <img height="30" src="https://img.shields.io/badge/Cheat%20Sheets-50555B?style=flat&labelColor=1F2225" alt="AI Cheat Sheets"/>
   </a>
 </p>
