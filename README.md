@@ -23,7 +23,7 @@
 <h3 style="font-size:28px;margin-bottom:12px;">🖥️ Infrastructure</h3>
 
 <p>
-  <a href="Infrastructure/Projects/VBOX-ONPREM-AD/README.md" title="VBOX AD">
+  <a href="https://github.com/JoshG-IT/Infrastructure/blob/6bcb63242da7cf53eaf6294fa7aa5122e2c714e3/Projects/VBOX-ONPREM-AD/README.md" title="VBOX AD">
     <img height="40" src="https://img.shields.io/badge/VBOX AD%20-687C9C?style=for-the-badge&labelColor=1F2225" alt="VBOX AD"/>
   </a>
 </p>
