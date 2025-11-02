@@ -28,7 +28,7 @@ Applies To: All repositories, labs, and educational templates under this account
 [![Windows Server](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows-server)
 [![Windows 11](https://img.shields.io/badge/Windows-11%20Pro-blueviolet?style=for-the-badge&logo=windows11)](https://www.microsoft.com/software-download/windows11)
 [![Purpose](https://img.shields.io/badge/Purpose-Cloud_Active_Directory_Lab-lightgrey?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Learning_Ready-brightgreen?style=for-the-badge)]()
 
 ---
 
