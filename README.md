@@ -29,7 +29,7 @@
 </p>
 
 <p>
-  <a href="Infrastructure/Projects/AZ-AD/README.md" title="Infrastructure AZURE AD">
+  <a href="https://github.com/JoshG-IT/Infrastructure/tree/34b1e7425f7e5dfd247645c883fc9f45571748ab/Projects/AZ-AD" title="AZURE AD">
     <img height="40" src="https://img.shields.io/badge/AZURE AD%20-687C9C?style=for-the-badge&labelColor=1F2225" alt="AZURE AD"/>
   </a>
 </p>
