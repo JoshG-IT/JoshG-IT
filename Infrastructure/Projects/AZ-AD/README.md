@@ -131,5 +131,3 @@ After GPO enforcement, users can still see the file but **cannot set it as wallp
 ☑ Wallpaper, Control Panel, and Task Manager restrictions enforced  
 ☑ RDP tested and functioning  
 ☑ Resources deleted to prevent cost overrun  
-
----
