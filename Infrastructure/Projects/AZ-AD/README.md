@@ -1,36 +1,38 @@
 <!-- ============================================================
-MICROSOFT AZURE ACTIVE DIRECTORY LAB
-Student GitHub Template - Created by Joshua Gonzalez
-For Educational and Learning Showcase Use
+⚠️ EDUCATIONAL USE ONLY DISCLAIMER
+Author: Joshua Gonzalez
+Applies To: All repositories, labs, and educational templates under this account
 ============================================================ -->
 
-# Microsoft Azure Active Directory Lab (Cloud Edition)
-
-> **Instructions for Students**
+> ## ⚠️ Educational Use Only — Read Before Proceeding  
 >
-> This is a **GitHub template** provided by **Joshua Gonzalez** for students who complete the *Microsoft Azure Active Directory Lab*.  
-> After finishing your lab:
-> 
-> 1. **Copy this Markdown file** into your own GitHub repository.  
-> 2. Replace the sample text and screenshots with **your own results**.  
-> 3. Use this file to build your **professional IT portfolio** and showcase your Azure skills.  
+> **Purpose:**  
+> All content within any repository published by **Joshua Gonzalez** (including PDFs, Markdown files, scripts, templates, and lab instructions) is provided **strictly for educational, training, and demonstration purposes**.  
 >
-> **Goal:** Learn how to deploy and manage an Active Directory environment inside Azure, apply Group Policies, and validate cost management practices.
+> **Usage Conditions:**  
+> - These materials are **not intended for production or commercial use**.  
+> - You are fully responsible for **any configurations, deployments, or cloud costs** incurred while following these labs.  
+> - The author, **Joshua Gonzalez**, assumes **no liability** for data loss, misconfiguration, or financial impact caused by misuse or misunderstanding.  
+> - Do **not** include real credentials, company data, or personal information.  
+> - These labs exist for **learning, experimentation, and personal portfolio growth** only.  
+>
+> **Legal Notice:**  
+> By accessing or using these materials, you acknowledge that you understand and accept these terms in full.  
+>
+> Joshua Gonzalez — Educational Training Content.  
+> Redistribution or commercial resale of these materials (including anything produced or posted by Joshua Gonzalez) is **strictly prohibited without written consent**.
 
 ---
 
 [![Platform](https://img.shields.io/badge/Platform-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure)](https://portal.azure.com)
-[![Windows Server](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/)
+[![Windows Server](https://img.shields.io/badge/Windows-Server%202022-blue?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows-server)
 [![Windows 11](https://img.shields.io/badge/Windows-11%20Pro-blueviolet?style=for-the-badge&logo=windows11)](https://www.microsoft.com/software-download/windows11)
-[![Purpose](https://img.shields.io/badge/Purpose-Student_Lab_Showcase-lightgrey?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Template_Ready-brightgreen?style=for-the-badge)]()
+[![Purpose](https://img.shields.io/badge/Purpose-Cloud_Active_Directory_Lab-lightgrey?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)]()
 
 ---
 
-> **⚠️ Educational Use Only**  
-> This lab is provided solely for educational and learning purposes.  
-> Students are encouraged to copy, modify, and personalize this file as part of their **portfolio showcase**.  
-> Joshua Gonzalez — Educational Template for Student Learning & Azure Training.
+# Microsoft Azure Active Directory Lab (Cloud Edition)
 
 ---
 
