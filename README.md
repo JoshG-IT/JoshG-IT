@@ -122,16 +122,6 @@
   <img height="40" src="https://komarev.com/ghpvc/?username=JoshG-IT&style=for-the-badge&color=4a9eff" alt="Profile views"/>
 </p>
 
-<!-- ============================ CREDITS ============================= -->
-<p align="center" style="margin-top:14px;"><sub>
-  Shout-out: 
-  <a href="https://shields.io/">Shields.io</a>,
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">readme-typing-svg</a>,
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a>,
-  <a href="https://github.com/anuraghazra/github-readme-stats">readme-stats</a>,
-  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">activity-graph</a>.
-</sub></p>
-
 <!-- ====== FOOTER ====== -->
 <p align="center" style="margin-top:18px;">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:7CFC00,100:00BFFF&section=footer" alt="footer"/>
