@@ -112,18 +112,12 @@
 <!-- ========================== STATS ============================ -->
 <div align="center" style="margin:16px 0;">
   <img height="200" src="https://streak-stats.demolab.com?user=JoshG-IT&theme=highcontrast&hide_border=true&background=000000" alt="GitHub streak stats"/>
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=JoshG-IT&show_icons=true&theme=radical&hide_border=true&bg_color=000000" alt="GitHub stats"/>
-  <img height="200" src="https://github-readme-activity-graph.vercel.app/graph?username=JoshG-IT&theme=react-dark&area=true&hide_border=true&bg_color=000000" alt="activity graph"/>
 </div>
 
 <hr style="border:none;height:1px;background:#2f3437;margin:18px 0;">
 
 <!-- ============================ CONNECT ============================= -->
-<h2 align="center" style="font-size:24px;">🔗 Connect</h2>
 <p align="center" style="margin-top:8px;">
-  <a href="https://www.linkedin.com/in/gjhi/" title="LinkedIn">
-    <img height="40" src="https://img.shields.io/badge/LinkedIn-4A90E2?style=for-the-badge&labelColor=1F2225&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
   &nbsp;
   <img height="40" src="https://komarev.com/ghpvc/?username=JoshG-IT&style=for-the-badge&color=4a9eff" alt="Profile views"/>
 </p>
