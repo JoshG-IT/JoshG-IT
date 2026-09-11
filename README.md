@@ -109,12 +109,6 @@
 
 <hr style="border:none;height:1px;background:#2f3437;margin:18px 0;">
 
-<!-- ========================== STATS ============================ -->
-<div align="center" style="margin:16px 0;">
-  <img height="200" src="https://streak-stats.demolab.com?user=JoshG-IT&theme=highcontrast&hide_border=true&background=000000" alt="GitHub streak stats"/>
-</div>
-
-<hr style="border:none;height:1px;background:#2f3437;margin:18px 0;">
 
 <!-- ============================ CONNECT ============================= -->
 <p align="center" style="margin-top:8px;">
