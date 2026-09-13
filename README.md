@@ -6,7 +6,7 @@
 
 <p align="center">
 Documented security casework across identity, detection, and exposure management.<br/>
-Each case carries evidence: commands, queries, logs, findings, and remediation.
+Each case carries real evidence: commands, queries, logs, findings, and validated remediation.
 </p>
 
 ---
@@ -56,7 +56,7 @@ Each case carries evidence: commands, queries, logs, findings, and remediation.
 
 <h3><a href="https://github.com/JoshG-IT/identity-security/tree/main/cases/IAM-AZ-001-operation-dead-deploy">Operation Dead Deploy</a> | Azure Governance Investigation</h3>
 
-Reconstructed an ARM deployment trail in a live multi-user Azure tenant to determine why an active naming policy detected a violation without preventing resource creation.
+Reconstructed an ARM deployment trail across a shared Azure subscription to determine why an active naming policy detected a violation without preventing resource creation.
 
 <ul>
 <li>Traced provisioning from resource discovery through deployment history using Azure CLI</li>
@@ -124,5 +124,5 @@ Automation   = PowerShell, Python, Bash, Azure CLI, Azure Resource Graph
 ---
 
 <p align="center">
-Cases are performed in controlled lab and training environments.
+Environment and access level are stated in each case.
 </p>
