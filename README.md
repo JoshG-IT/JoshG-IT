@@ -58,13 +58,6 @@ Each case carries real evidence: commands, queries, logs, findings, and validate
 
 Reconstructed an ARM deployment trail across a shared Azure subscription to determine why an active naming policy detected a violation without preventing resource creation.
 
-<ul>
-<li>Traced provisioning from resource discovery through deployment history using Azure CLI</li>
-<li>Correlated Azure Policy state, definition, and assignment as three separate objects</li>
-<li>Root cause: the control was configured in Audit mode, making it detective rather than preventive</li>
-<li>Documented an RBAC authorization boundary encountered mid-investigation and worked around it</li>
-</ul>
-
 <img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
 <img src="https://img.shields.io/badge/AZURE-2B5D8C?style=flat-square" alt="Azure"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
