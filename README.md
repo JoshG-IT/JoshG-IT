@@ -5,7 +5,8 @@
 ---
 
 <p align="center">
-Each repository below holds documented investigations, implementations, detections, and assessments, backed by real commands, queries, logs, and validated remediation.
+Documented security casework across identity, detection, and exposure management.<br/>
+Each case carries evidence: commands, queries, logs, findings, and remediation.
 </p>
 
 ---
@@ -19,9 +20,7 @@ Each repository below holds documented investigations, implementations, detectio
   </a>
   <br/><br/>
   Entra ID · Active Directory<br/>
-  PIM · Conditional Access · RBAC
-  <br/><br/>
-  <b>4 investigations · 2 implementations</b>
+  RBAC · Azure Policy · Privileged Access
   <br/><br/>
 </td>
 <td width="33%" align="center" valign="top">
@@ -31,9 +30,7 @@ Each repository below holds documented investigations, implementations, detectio
   </a>
   <br/><br/>
   Sentinel · Defender · Sysmon<br/>
-  KQL · Threat Hunting · IR
-  <br/><br/>
-  <b>3 investigations · 6 detections</b>
+  KQL · Threat Hunting · Incident Response
   <br/><br/>
 </td>
 <td width="33%" align="center" valign="top">
@@ -42,10 +39,8 @@ Each repository below holds documented investigations, implementations, detectio
     <img src="https://img.shields.io/badge/VULNERABILITY_MGMT-4A7350?style=for-the-badge" height="36" alt="Vulnerability Management"/>
   </a>
   <br/><br/>
-  Nessus · Defender VM<br/>
-  CIS · DISA STIG · NIST
-  <br/><br/>
-  <b>2 implementations · 2 assessments</b>
+  Nessus · Defender for Cloud<br/>
+  CIS · DISA STIG · NIST 800-53
   <br/><br/>
 </td>
 </tr>
@@ -53,71 +48,28 @@ Each repository below holds documented investigations, implementations, detectio
 
 ---
 
-<h2 align="center">Projects</h2>
+<h2 align="center">Featured Cases</h2>
 
 <table align="center" width="100%">
 <tr>
 <td align="left">
 
-<h3><a href="PROJECT_LINK_1">Operation Dead Deploy</a> — Privileged Access Investigation</h3>
+<h3><a href="https://github.com/JoshG-IT/identity-security/tree/main/cases/IAM-AZ-001-operation-dead-deploy">Operation Dead Deploy</a> | Azure Governance Investigation</h3>
 
-Traced an orphaned deployment service principal holding standing Owner rights across a subscription.
+Reconstructed an ARM deployment trail in a live multi-user Azure tenant to determine why an active naming policy detected a violation without preventing resource creation.
 
 <ul>
-<li>Reconstructed the assignment path via RBAC review and Activity Log correlation</li>
-<li>Identified a 14-month credential rotation gap on a privileged identity</li>
-<li>Delivered scoped custom-role remediation, mapped to NIST 800-53 AC-6</li>
+<li>Traced provisioning from resource discovery through deployment history using Azure CLI</li>
+<li>Correlated Azure Policy state, definition, and assignment as three separate objects</li>
+<li>Root cause: the control was configured in Audit mode, making it detective rather than preventive</li>
+<li>Documented an RBAC authorization boundary encountered mid-investigation and worked around it</li>
 </ul>
 
 <img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
 <img src="https://img.shields.io/badge/AZURE-2B5D8C?style=flat-square" alt="Azure"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
-<img src="https://img.shields.io/badge/KQL-2B5D8C?style=flat-square" alt="KQL"/>
-<img src="https://img.shields.io/badge/NIST_800--53-2B5D8C?style=flat-square" alt="NIST 800-53"/>
-
-</td>
-</tr>
-
-<tr>
-<td align="left">
-
-<h3><a href="PROJECT_LINK_2">Silent Spread</a> — Lateral Movement Threat Hunt</h3>
-
-Hypothesis-driven hunt for lateral movement across a Windows estate using process and authentication telemetry.
-
-<ul>
-<li>Built the hypothesis from observed service account behavior, then queried to confirm or reject it</li>
-<li>Correlated remote service creation with anomalous logon patterns across 40+ hosts</li>
-<li>Converted the hunt query into a scheduled analytics rule with a measured false-positive rate</li>
-</ul>
-
-<img src="https://img.shields.io/badge/SECURITY_OPERATIONS-8C3A3A?style=flat-square" alt="Security Operations"/>
-<img src="https://img.shields.io/badge/ON--PREMISES-8C3A3A?style=flat-square" alt="On-Premises"/>
-<img src="https://img.shields.io/badge/SYSMON-8C3A3A?style=flat-square" alt="Sysmon"/>
-<img src="https://img.shields.io/badge/SENTINEL-8C3A3A?style=flat-square" alt="Sentinel"/>
-<img src="https://img.shields.io/badge/MITRE_ATT%26CK-8C3A3A?style=flat-square" alt="MITRE ATT&CK"/>
-
-</td>
-</tr>
-
-<tr>
-<td align="left">
-
-<h3><a href="PROJECT_LINK_3">Enterprise Vulnerability Management</a> — Implementation</h3>
-
-Deployed authenticated scanning across a Windows environment with a risk-based remediation workflow.
-
-<ul>
-<li>Onboarded 40+ hosts with credentialed scanning and validated coverage gaps</li>
-<li>Built severity-based remediation SLAs tied to asset criticality</li>
-<li>Proved patch effectiveness through automated rescan evidence</li>
-</ul>
-
-<img src="https://img.shields.io/badge/VULNERABILITY_MGMT-4A7350?style=flat-square" alt="Vulnerability Management"/>
-<img src="https://img.shields.io/badge/ON--PREMISES-4A7350?style=flat-square" alt="On-Premises"/>
-<img src="https://img.shields.io/badge/NESSUS-4A7350?style=flat-square" alt="Nessus"/>
-<img src="https://img.shields.io/badge/POWERSHELL-4A7350?style=flat-square" alt="PowerShell"/>
-<img src="https://img.shields.io/badge/CIS_BENCHMARKS-4A7350?style=flat-square" alt="CIS Benchmarks"/>
+<img src="https://img.shields.io/badge/AZURE_POLICY-2B5D8C?style=flat-square" alt="Azure Policy"/>
+<img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
 
 </td>
 </tr>
@@ -139,7 +91,7 @@ Deployed authenticated scanning across a Windows environment with a risk-based r
 <tr><td>CompTIA</td><td><b>Security+ (SY0-701)</b></td><td>Security Fundamentals</td></tr>
 <tr><td>Microsoft</td><td><b>Azure Fundamentals (AZ-900)</b></td><td>Cloud Fundamentals</td></tr>
 <tr><td>AWS</td><td><b>Cloud Practitioner (CLF-C02)</b></td><td>Cloud Fundamentals</td></tr>
-<tr><td>AWS</td><td><b>Solutions Architect – Associate (SAA-C03)</b></td><td>Cloud Architecture</td></tr>
+<tr><td>AWS</td><td><b>Solutions Architect - Associate (SAA-C03)</b></td><td>Cloud Architecture</td></tr>
 </table>
 
 ---
@@ -149,22 +101,28 @@ Deployed authenticated scanning across a Windows environment with a risk-based r
 ```ini
 [Identity_Security]
 Platforms    = Entra ID, Active Directory, Azure RBAC
-Capabilities = Conditional Access, PIM, Access Reviews, Group Policy
-Focus        = Privileged access, consent governance, tiered administration
+Capabilities = Azure Policy, Conditional Access, Access Reviews, Group Policy
+Focus        = Privileged access, governance controls, consent governance
 
 [Security_Operations]
 SIEM_EDR     = Microsoft Sentinel, Defender for Endpoint, Sysmon
-Query        = KQL, PowerShell, Wireshark
+Query        = KQL, PowerShell, Windows Event Logs
 Practice     = Threat hunting, log analysis, incident response
 Frameworks   = MITRE ATT&CK
 
 [Vulnerability_Management]
-Scanning     = Tenable Nessus, Defender Vulnerability Management
-Practice     = Authenticated scanning, risk-based remediation, patch validation
+Scanning     = Tenable Nessus, Defender for Cloud
+Practice     = Authenticated scanning, risk prioritization, patch validation
 Standards    = CIS Benchmarks, DISA STIG, NIST 800-53
 
 [Infrastructure_Foundation]
 Systems      = Windows Server, Linux (RHEL, Ubuntu), Hyper-V, VMware ESXi
 Networking   = VLANs, routing, ACLs, IPsec VPN, pfSense
-Automation   = PowerShell, Python, Bash, Azure CLI
+Automation   = PowerShell, Python, Bash, Azure CLI, Azure Resource Graph
 ```
+
+---
+
+<p align="center">
+Cases are performed in controlled lab and training environments.
+</p>
