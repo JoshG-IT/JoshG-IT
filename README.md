@@ -79,13 +79,6 @@ Reconstructed an ARM deployment trail across a shared Azure subscription to dete
 
 <h2 align="center">Certifications</h2>
 
-<p align="center">
-  <a href="CREDLY_PUBLIC_URL_1"><img src="CREDLY_IMAGE_URL_1" height="90" alt="CompTIA Security+"/></a>
-  <a href="CREDLY_PUBLIC_URL_2"><img src="CREDLY_IMAGE_URL_2" height="90" alt="Microsoft Azure Fundamentals"/></a>
-  <a href="CREDLY_PUBLIC_URL_3"><img src="CREDLY_IMAGE_URL_3" height="90" alt="AWS Cloud Practitioner"/></a>
-  <a href="CREDLY_PUBLIC_URL_4"><img src="CREDLY_IMAGE_URL_4" height="90" alt="AWS Solutions Architect"/></a>
-</p>
-
 <table align="center">
 <tr><th>Vendor</th><th>Certification</th><th>Domain</th></tr>
 <tr><td>CompTIA</td><td><b>Security+ (SY0-701)</b></td><td>Security Fundamentals</td></tr>
