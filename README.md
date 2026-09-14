@@ -66,6 +66,22 @@ Reconstructed an ARM deployment trail across a shared Azure subscription to dete
 
 </td>
 </tr>
+
+<tr>
+<td align="left">
+
+<h3><a href="https://github.com/JoshG-IT/identity-security/tree/main/cases/IAM-AZ-002-the-stolen-identity">The Stolen Identity</a> | Azure Identity Investigation</h3>
+
+Reconstructed a five-stage OAuth consent-phishing and application-persistence chain across two linked Microsoft Entra app registrations, tracing how a stolen authenticated session became durable application-level access that user-focused containment would not remove.
+
+<img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
+<img src="https://img.shields.io/badge/ENTRA_ID-2B5D8C?style=flat-square" alt="Entra ID"/>
+<img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
+<img src="https://img.shields.io/badge/OAUTH_2.0-2B5D8C?style=flat-square" alt="OAuth 2.0"/>
+<img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
+
+</td>
+</tr>
 </table>
 
 ---
