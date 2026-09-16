@@ -73,7 +73,8 @@ Reconstructed a five-stage OAuth consent-phishing chain across two linked Micros
 <img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
 <img src="https://img.shields.io/badge/ENTRA_ID-2B5D8C?style=flat-square" alt="Entra ID"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
-<img src="https://img.shields.io/badge/OAUTH_2.0-2B5D8C?style=flat-square" alt="OAuth 2.0"/>
+<img src="https://img.shields.io/badge/OAuth_2.0-6E7681?style=flat-square" alt="OAuth 2.0"/>
+<img src="https://img.shields.io/badge/CyberChef-6E7681?style=flat-square" alt="CyberChef"/>
 <img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
 
 </td>
@@ -87,9 +88,10 @@ Reconstructed a five-stage OAuth consent-phishing chain across two linked Micros
 Reconstructed an ARM deployment trail across a shared Azure subscription to determine why an active naming policy detected a violation without preventing resource creation.
 
 <img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
-<img src="https://img.shields.io/badge/AZURE-2B5D8C?style=flat-square" alt="Azure"/>
+<img src="https://img.shields.io/badge/MICROSOFT_AZURE-2B5D8C?style=flat-square" alt="Microsoft Azure"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
-<img src="https://img.shields.io/badge/AZURE_POLICY-2B5D8C?style=flat-square" alt="Azure Policy"/>
+<img src="https://img.shields.io/badge/Azure_Policy-6E7681?style=flat-square" alt="Azure Policy"/>
+<img src="https://img.shields.io/badge/JMESPath-6E7681?style=flat-square" alt="JMESPath"/>
 <img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
 
 </td>
