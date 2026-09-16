@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:2B5D8C,50:8C3A3A,100:4A7350&text=Cybersecurity%20Portfolio&fontSize=40&fontAlign=50&fontAlignY=36&fontColor=ffffff&animation=fadeIn" alt="Cybersecurity Portfolio"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:2B5D8C,35:8C3A3A,70:4A7350,100:8C7A2B&text=Cybersecurity%20Portfolio&fontSize=40&fontAlign=50&fontAlignY=36&fontColor=ffffff&animation=fadeIn" alt="Cybersecurity Portfolio"/>
 </p>
 
 ---
 
 <p align="center">
-Documented security casework across identity, detection, and exposure management.<br/>
+Documented security casework across identity, detection, exposure management, and governance.<br/>
 Each case carries real evidence: commands, queries, logs, findings, and validated remediation.
 </p>
 
@@ -44,6 +44,18 @@ Each case carries real evidence: commands, queries, logs, findings, and validate
   <br/><br/>
 </td>
 </tr>
+<tr>
+<td colspan="3" align="center" valign="top">
+  <br/>
+  <a href="https://github.com/JoshG-IT/governance-risk-compliance">
+    <img src="https://img.shields.io/badge/GOVERNANCE,_RISK_%26_COMPLIANCE-8C7A2B?style=for-the-badge" height="36" alt="Governance, Risk and Compliance"/>
+  </a>
+  <br/><br/>
+  Risk Assessment · Control Mapping · Policy · Audit Evidence<br/>
+  NIST RMF · NIST CSF · ISO 27001 · CMMC
+  <br/><br/>
+</td>
+</tr>
 </table>
 
 ---
@@ -51,6 +63,22 @@ Each case carries real evidence: commands, queries, logs, findings, and validate
 <h2 align="center">Featured Cases</h2>
 
 <table align="center" width="100%">
+<tr>
+<td align="left">
+
+<h3><a href="https://github.com/JoshG-IT/identity-security/tree/main/cases/IAM-AZ-002-the-stolen-identity">The Stolen Identity</a> | Azure Identity Investigation</h3>
+
+Reconstructed a five-stage OAuth consent-phishing chain across two linked Microsoft Entra app registrations, tracing a stolen session into application-level persistence that standard containment would not remove.
+
+<img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
+<img src="https://img.shields.io/badge/ENTRA_ID-2B5D8C?style=flat-square" alt="Entra ID"/>
+<img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
+<img src="https://img.shields.io/badge/OAUTH_2.0-2B5D8C?style=flat-square" alt="OAuth 2.0"/>
+<img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
+
+</td>
+</tr>
+
 <tr>
 <td align="left">
 
@@ -62,22 +90,6 @@ Reconstructed an ARM deployment trail across a shared Azure subscription to dete
 <img src="https://img.shields.io/badge/AZURE-2B5D8C?style=flat-square" alt="Azure"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
 <img src="https://img.shields.io/badge/AZURE_POLICY-2B5D8C?style=flat-square" alt="Azure Policy"/>
-<img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
-
-</td>
-</tr>
-
-<tr>
-<td align="left">
-
-<h3><a href="https://github.com/JoshG-IT/identity-security/tree/main/cases/IAM-AZ-002-the-stolen-identity">The Stolen Identity</a> | Azure Identity Investigation</h3>
-
-Reconstructed a five-stage OAuth consent-phishing and application-persistence chain across two linked Microsoft Entra app registrations, tracing how a stolen authenticated session became durable application-level access that user-focused containment would not remove.
-
-<img src="https://img.shields.io/badge/IDENTITY_SECURITY-2B5D8C?style=flat-square" alt="Identity Security"/>
-<img src="https://img.shields.io/badge/ENTRA_ID-2B5D8C?style=flat-square" alt="Entra ID"/>
-<img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
-<img src="https://img.shields.io/badge/OAUTH_2.0-2B5D8C?style=flat-square" alt="OAuth 2.0"/>
 <img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
 
 </td>
@@ -116,6 +128,10 @@ Frameworks   = MITRE ATT&CK
 Scanning     = Tenable Nessus, Defender for Cloud
 Practice     = Authenticated scanning, risk prioritization, patch validation
 Standards    = CIS Benchmarks, DISA STIG, NIST 800-53
+
+[Governance_Risk_Compliance]
+Frameworks   = NIST 800-53, NIST CSF, NIST RMF, ISO 27001, CMMC
+Practice     = Risk assessment, control mapping, policy authoring, audit evidence
 
 [Infrastructure_Foundation]
 Systems      = Windows Server, Linux (RHEL, Ubuntu), Hyper-V, VMware ESXi
