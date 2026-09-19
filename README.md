@@ -74,7 +74,7 @@ Reconstructed a five-stage OAuth consent-phishing chain across two linked Micros
 <img src="https://img.shields.io/badge/ENTRA_ID-2B5D8C?style=flat-square" alt="Entra ID"/>
 <img src="https://img.shields.io/badge/AZURE_CLI-2B5D8C?style=flat-square" alt="Azure CLI"/>
 <img src="https://img.shields.io/badge/OAuth_2.0-6E7681?style=flat-square" alt="OAuth 2.0"/>
-<img src="https://img.shields.io/badge/CyberChef-6E7681?style=flat-square" alt="CyberChef"/>
+<img src="https://img.shields.io/badge/PowerShell-6E7681?style=flat-square" alt="PowerShell"/>
 <img src="https://img.shields.io/badge/READ--ONLY-6E7681?style=flat-square" alt="Read-only"/>
 
 </td>
